@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Strength Checker</title>
+</head>
+<body>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+    </div>
+    <h1>Password Strength Checker</h1>
+    <input type="password" id="password" placeholder="Enter your password" class="password-input">
+    <button onclick="checkPassword()">Check</button>
+    <p id="result"></p>
+    <br>
+    <label for="showPassword">Show Password</label>
+    <input type="checkbox" id="showPassword" onchange="togglePasswordVisibility()">
+    <br>
+    <button onclick="generatePassword()">Generate Password</button>
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    <script src="script.js"></script>
+</body>
+</html>
